@@ -1,0 +1,66 @@
+html {
+    font-family: Ubuntu, "monospace";
+    padding: 40px;
+    background-color: lightgray;
+}
+
+header {
+    font-size: large;
+}
+
+#header-images-container {
+    text-align: center;
+    position: relative;
+}
+
+#itmo-logo-image {
+    width: 208px;
+    height: 82px;
+    margin-bottom: 25px;
+}
+#vt-logo-image {
+    width: 100px;
+    padding: 10px;
+}
+
+#creds-container {
+    vertical-align: center;
+    text-align: right;
+}
+
+#span-name, #span-group {
+    display: block;
+}
+
+/* Table of contents */
+
+#table-contents-container {
+    margin-top: 50px;
+    border-width: 5px;
+}
+
+#table-contents > thead {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+#table-contents {
+    border-color: grey;
+    border-style: ridge;
+    box-shadow: 10px 5px 5px slategrey;
+    padding: 5px;
+    width: 100%;
+}
+
+#table-contents td {
+    border-bottom: 1px solid black;
+    width: 50%;
+    padding: 3px;
+}
+
+.link-to-solver {
+    text-align: center;
+    font-style: italic;
+    border-left: 1px solid black;
+}
