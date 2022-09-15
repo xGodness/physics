@@ -11,16 +11,23 @@
 
 <header>
     <script src="../javascript/include_header.js"></script>
+    <div id="return-href-container">
+        <a href="../index.html"><span id="arrow-span-2">⟵</span> Return</a>
+    </div>
 </header>
 
 <body>
-    <div id="task-1">
+    <!--------------------------------- Problem 1 --------------------------------->
+    <div id="problem-1">
 
-        <table id="task-1-table">
+        <table id="problem-1-table">
             <tr>
-                <td id="cell-given" colspan="3">
+                <td id="cell-given-1" colspan="3">
+                    <p class="problem-header">
+                        Problem #2.1
+                    </p>
                     <hr>
-                    <p id="given">
+                    <p id="given-1">
                         Система состоит из тонкого заряженного проволочного кольца радиуса R и очень длинной равномерно заряженной нити,
                         расположенной по оси кольца так, что один из ее концов совпадает с центром кольца.
                         Последнее имеет заряд q. На единицу длины нити приходится заряд λ.
@@ -31,32 +38,83 @@
             </tr>
 
             <tr>
-                <td id="cell-canvas">
-                    <div id="canvas-container">
+                <td id="cell-canvas-1">
+                    <div id="canvas-container-1">
                         <canvas id="canvas-1" width="400" height="400" style="border: 2px solid black"> </canvas>
-                        <script src="javascript/graphics-1.js"></script>
+                        <script src="javascript/graphics.js"></script>
                     </div>
                 </td>
 
                 <td id="cell-input">
                     <div id="io-container">
-                        <label for="input-r">Parameter R:</label>
-                        <input id="input-r" type="text">
+                        <label for="input-r-1">Parameter R (м):</label>
+                        <input id="input-r-1" type="text">
 
-                        <label for="input-q">Parameter q:</label>
-                        <input id="input-q" type="text">
+                        <label for="input-q-1">Parameter q (Кл):</label>
+                        <input id="input-q-1" type="text">
 
-                        <label for="input-lambda">Parameter λ:</label>
-                        <input id="input-lambda" type="text">
+                        <label for="input-lambda-1">Parameter λ (Кл/м):</label>
+                        <input id="input-lambda-1" type="text">
 
                         <button id="button-submit-1" role="button" onclick="calculate_1()">Submit</button>
                     </div>
                 </td>
 
                 <td id="cell-result">
-                    <fieldset id="result-fieldset">
-                        <legend id="result-legend">Result</legend>
-                        <p id="result-field"></p>
+                    <fieldset class="result-fieldset">
+                        <legend class="result-legend">Result</legend>
+                        <p id="result-field-1"></p>
+                    </fieldset>
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+
+    <!--------------------------------- Problem 2 --------------------------------->
+
+    <div id="problem-2">
+
+        <table id="problem-2-table">
+            <tr>
+                <td id="cell-given-2" colspan="3">
+                    <p class="problem-header">
+                        Problem #2.4
+                    </p>
+                    <hr>
+                    <p id="given">
+                        Найти напряженность поля равномерно заряженной нити в виде четверти кольца
+                        в точке центра его кривизны.
+                        Линейная плотность заряда нити λ. Радиус R.
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="cell-canvas-2">
+                    <div id="canvas-container-2">
+                        <canvas id="canvas-2" width="400" height="400" style="border: 2px solid black"> </canvas>
+                    </div>
+                </td>
+
+                <td class="cell-input">
+                    <div class="io-container">
+                        <label for="input-lambda-2">Parameter λ (Кл/м):</label>
+                        <input id="input-lambda-2" type="text">
+
+                        <label for="input-r-2">Parameter R (м):</label>
+                        <input id="input-r-2" type="text">
+
+                        <button id="button-submit-2" role="button" onclick="calculate_2()">Submit</button>
+                    </div>
+                </td>
+
+                <td class="cell-result">
+                    <fieldset class="result-fieldset">
+                        <legend class="result-legend">Result</legend>
+                        <p id="result-field-2"></p>
                     </fieldset>
                 </td>
 
@@ -64,6 +122,6 @@
             </tr>
         </table>
 
-
     </div>
+
 </body>

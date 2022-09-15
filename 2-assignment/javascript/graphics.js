@@ -1,6 +1,6 @@
 window.onload = function () {
     draw_1();
-    // draw_2();
+    draw_2();
 }
 
 function draw_1() {
@@ -71,6 +71,41 @@ function draw_1() {
     ctx.closePath();
 }
 
-// function draw_2() {
-//
-// }
+
+function draw_2() {
+    const canvas = document.getElementById("canvas-2");
+    const ctx = canvas.getContext("2d");
+
+    ctx.font = "18px ubuntu";
+
+    let w = canvas.width;
+    let h = canvas.height;
+
+    let center_w = w / 2;
+    let center_h = h / 2 + 75;
+    
+    let r = 150;
+
+    ctx.clearRect(0, 0, w, h);
+    
+    ctx.beginPath();
+    
+    // draw quarter circle
+    ctx.arc(center_w, center_h, r, -Math.PI * 3 / 4, -Math.PI / 4);
+    ctx.stroke();
+    
+    // draw radius
+    ctx.setLineDash([5, 10]);
+    let d = r / Math.sqrt(2);
+    ctx.moveTo(center_w, center_h);
+    ctx.lineTo(center_w - d, center_h - d);
+    ctx.moveTo(center_w, center_h);
+    ctx.lineTo(center_w + d, center_h - d);
+    ctx.stroke();
+    
+    // set R and λ letters
+    ctx.fillText("R", center_w + d / 2 + 20, center_h - d / 2);
+    ctx.fillText("λ", center_w, center_h - r - 10);
+    
+    ctx.closePath();
+}

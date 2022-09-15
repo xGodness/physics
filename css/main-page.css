@@ -1,8 +1,11 @@
 /* Table of contents */
 
 #table-contents-container {
+    width: 80%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
-    border-width: 5px;
 }
 
 #table-contents > thead {
@@ -12,9 +15,11 @@
 }
 
 #table-contents {
-    border-color: grey;
     border-style: ridge;
-    box-shadow: 10px 5px 5px slategrey;
+    border-color: #737373;
+    border-width: 5px;
+    box-shadow: 15px 15px 10px slategrey;
+    margin-top: 20px;
     padding: 5px;
     width: 100%;
 }
@@ -27,6 +32,5 @@
 
 .link-to-solver {
     text-align: center;
-    font-style: italic;
     border-left: 1px solid black;
 }
