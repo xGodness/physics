@@ -51,9 +51,9 @@ function validate_is_number(num, var_name, problem_number) {
 
 function calculate_1() {
     clear_result_field(1);
-    let r = document.getElementById("input-r-1").value;
-    let q = document.getElementById("input-q-1").value;
-    let lambda = document.getElementById("input-lambda-1").value;
+    let r = document.getElementById("input-r-1").value.replace(/\s/g, '');
+    let q = document.getElementById("input-q-1").value.replace(/\s/g, '');
+    let lambda = document.getElementById("input-lambda-1").value.replace(/\s/g, '');
     
     let check_res_r = validate_positive(r, "R", 1);
     let check_res_q = validate_is_number(q, "q", 1);
@@ -67,8 +67,8 @@ function calculate_1() {
 
 function calculate_2() {
     clear_result_field(2);
-    let r = document.getElementById("input-r-2").value;
-    let lambda = document.getElementById("input-lambda-2").value;
+    let r = document.getElementById("input-r-2").value.replace(/\s/g, '');
+    let lambda = document.getElementById("input-lambda-2").value.replace(/\s/g, '');
 
     let check_res_r = validate_positive(r, "R", 2);
     let check_res_lambda = validate_is_number(lambda, "λ", 2);
