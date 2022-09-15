@@ -1,0 +1,56 @@
+tr {
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+td {
+    width: 30vw;
+    padding: 20px;
+    text-align: center;
+    vertical-align: center;
+/*border: 1px solid red;*/
+}
+
+#task-1-table {
+    border-style: ridge;
+    border-color: #737373;
+    border-width: 10px;
+    box-shadow: 15px 15px 10px slategrey;
+    margin-top: 20px;
+    padding: 5px;
+    width: 100%;
+}
+
+#cell-given {
+    font-size: large;
+}
+
+#io-container {
+    position: relative;
+    width: available;
+    /*border: 1px solid blue;*/
+}
+
+#result-legend {
+    font-weight: bold;
+}
+
+#result-field {
+    text-align: left;
+}
+
+#input-r, #input-q, #input-lambda {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset {
+    border: 1px solid black;
+}
+

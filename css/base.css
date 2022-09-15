@@ -1,0 +1,9 @@
+html {
+    font-family: Ubuntu, "monospace";
+    padding: 40px;
+    background-color: lightgray;
+}
+
+header {
+    font-size: large;
+}

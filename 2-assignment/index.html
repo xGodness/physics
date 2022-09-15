@@ -1,1 +1,69 @@
-second
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="xGodness">
+    <title>Assignment #2</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/2-assignment.css">
+</head>
+
+<header>
+    <script src="../javascript/include_header.js"></script>
+</header>
+
+<body>
+    <div id="task-1">
+
+        <table id="task-1-table">
+            <tr>
+                <td id="cell-given" colspan="3">
+                    <hr>
+                    <p id="given">
+                        Система состоит из тонкого заряженного проволочного кольца радиуса R и очень длинной равномерно заряженной нити,
+                        расположенной по оси кольца так, что один из ее концов совпадает с центром кольца.
+                        Последнее имеет заряд q. На единицу длины нити приходится заряд λ.
+                        Найти силу взаимодействия кольца и нити.
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="cell-canvas">
+                    <div id="canvas-container">
+                        <canvas id="canvas-1" width="400" height="400" style="border: 2px solid black"> </canvas>
+                        <script src="javascript/graphics-1.js"></script>
+                    </div>
+                </td>
+
+                <td id="cell-input">
+                    <div id="io-container">
+                        <label for="input-r">Parameter R:</label>
+                        <input id="input-r" type="text">
+
+                        <label for="input-q">Parameter q:</label>
+                        <input id="input-q" type="text">
+
+                        <label for="input-lambda">Parameter λ:</label>
+                        <input id="input-lambda" type="text">
+
+                        <button id="button-submit-1" role="button" onclick="calculate_1()">Submit</button>
+                    </div>
+                </td>
+
+                <td id="cell-result">
+                    <fieldset id="result-fieldset">
+                        <legend id="result-legend">Result</legend>
+                        <p id="result-field"></p>
+                    </fieldset>
+                </td>
+
+                <script src="javascript/calculation.js"></script>
+            </tr>
+        </table>
+
+
+    </div>
+</body>
