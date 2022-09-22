@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="xGodness">
+    <title>Assignment #3</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/3-assignment.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<header>
+<!--    <script src="../include_header.js"></script>-->
+    <script src="/physics/include_header.js"></script>
+    <div id="return-href-container">
+        <a href="../index.html"><span id="arrow-span-2">⟵</span> Return</a>
+    </div>
+</header>
+
+<body>
+    <!--------------------------------- Problem 1 --------------------------------->
+    <div id="problem-1">
+
+        <table id="problem-1-table">
+            <tr>
+                <td id="cell-given-1" colspan="3">
+                    <p class="problem-header">
+                        Problem #3.2
+                    </p>
+                    <hr>
+                    <p id="given-1">
+                        Определить напряженность электрического поля, потенциал которого зависит от координат x, у по закону φ(x, y).
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="cell-math-1">
+                    <hr>
+                    Given:
+                    <p id="math-1-a-given" class="latex">
+                        \( a) \ \varphi = a (x^2 - y^2)\)
+                    </p>
+                    <p id="math-1-b-given" class="latex">
+                        \( b) \ \varphi = axy \)
+                    </p>
+                    <hr>
+                    Answer:
+                    <p id="math-1-a-answer" class="latex">
+                        \( a) \ \overrightarrow{E} = -2ax\cdot\vec{i} + 2ay\cdot\vec{j} \)
+                    </p>
+                    <p id="math-1-b-answer" class="latex">
+                        \( b) \ \overrightarrow{E} = -ay\cdot\vec{i} - ax\cdot\vec{j} \)
+                    </p>
+                    <hr>
+                </td>
+
+                <td id="cell-input">
+                    <div id="io-container">
+                        <label for="input-x-1">Parameter x:</label>
+                        <input id="input-x-1" type="text">
+
+                        <label for="input-y-1">Parameter y:</label>
+                        <input id="input-y-1" type="text">
+
+                        <label for="input-a-1">Parameter a:</label>
+                        <input id="input-a-1" type="text">
+
+                        <button id="button-submit-1" role="button" onclick="calculate_1()">Submit</button>
+                    </div>
+                </td>
+
+                <td id="cell-result">
+                    <fieldset class="result-fieldset">
+                        <legend class="result-legend">Result</legend>
+                        <p id="result-field-1"></p>
+                    </fieldset>
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+
+    <!--------------------------------- Problem 2 --------------------------------->
+
+    <div id="problem-2">
+
+        <table id="problem-2-table">
+            <tr>
+                <td id="cell-given-2" colspan="3">
+                    <p class="problem-header">
+                        Problem #3.4
+                    </p>
+                    <hr>
+                    <p id="given">
+                        Найти потенциал электрических полей.
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="cell-math-2">
+                    <hr>
+                    Given:
+                    <p id="math-2-a-given" class="latex">
+                        \( a) \ \overrightarrow{E} = a(y\cdot\vec{i}\ + x\cdot\vec{j}\ ) \)
+                    </p>
+                    <p id="math-2-b-given" class="latex">
+                        \( b) \ \overrightarrow{E} = 2axy\cdot\vec{i} + a(x^2 - y^2)\cdot\vec{j} \)
+                    </p>
+                    <hr>
+                    Answer:
+                    <p id="math-2-a-answer" class="latex">
+                        \( a) \ \varphi = -axy \)
+                    </p>
+                    <p id="math-2-b-answer" class="latex">
+                        \( b) \ \varphi = -ax^2y + {1 \over 3} ay^3 \)
+                    </p>
+                    <hr>
+                </td>
+
+                <td class="cell-input">
+                    <div class="io-container">
+                        <label for="input-x-2">Parameter x:</label>
+                        <input id="input-x-2" type="text">
+
+                        <label for="input-y-2">Parameter y:</label>
+                        <input id="input-y-2" type="text">
+
+                        <label for="input-a-2">Parameter a:</label>
+                        <input id="input-a-2" type="text">
+
+                        <button id="button-submit-2" role="button" onclick="calculate_2()">Submit</button>
+                    </div>
+                </td>
+
+                <td class="cell-result">
+                    <fieldset class="result-fieldset">
+                        <legend class="result-legend">Result</legend>
+                        <p id="result-field-2"></p>
+                    </fieldset>
+                </td>
+
+                <script src="javascript/calculation.js"></script>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
