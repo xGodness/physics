@@ -60,8 +60,12 @@ function calculate_1() {
     let check_res_lambda = validate_is_number(lambda, "λ", 1);
     
     if (check_res_r && check_res_q && check_res_lambda) {
-        let ans = parseFloat(q) * parseFloat(lambda) / parseFloat(r);
-        append_result(`[Result] F = ${ans.toFixed(2)} · k (Н)`, 1);
+        r = parseFloat(r);
+        q = parseFloat(q);
+        lambda = parseFloat(lambda);
+        let k = 9 * 10**6;
+        let ans = q * lambda * k / r;
+        append_result(`[Result] F = ${ans.toFixed(2)} (кН)`, 1);
     }
 }
 
@@ -74,7 +78,10 @@ function calculate_2() {
     let check_res_lambda = validate_is_number(lambda, "λ", 2);
     
     if (check_res_r && check_res_lambda) {
-        let ans = Math.sqrt(2) * parseFloat(lambda) / parseFloat(r);
-        append_result(`[Result] E = ${ans.toFixed(2)} · k (Н/Кл)`, 2);
+        r = parseFloat(r);
+        lambda = parseFloat(lambda);
+        let k = 9 * 10**6;
+        let ans = Math.sqrt(2) * parseFloat(lambda) * k / parseFloat(r);
+        append_result(`[Result] E = ${ans.toFixed(2)} (кН/Кл)`, 2);
     }
 }

@@ -58,26 +58,35 @@ function calculate_1() {
     let check_res_r = validate_positive(m, "m", 1);
     let check_res_q = validate_is_number(q, "q", 1);
     let check_res_l = validate_positive(l, "l", 1);
+    let k = 9 * 10**9;
     
     if (check_res_r && check_res_q && check_res_l) {
         m = parseFloat(m);
         q = parseFloat(q);
         l = parseFloat(l);
-        let ans = Math.sqrt((8 * q * q) / (m * l));
-        append_result(`[Result] v = ${ans.toFixed(2)} · √k (Км/ч)`, 1);
+        let ans = Math.sqrt((8 * q * q * k) / (m * l));
+        append_result(`[Result] v = ${ans.toFixed(2)} (м/с)`, 1);
     }
 }
 
 function calculate_2() {
     clear_result_field(2);
-    let r = document.getElementById("input-r-2").value.replace(/\s/g, '');
-    let lambda = document.getElementById("input-lambda-2").value.replace(/\s/g, '');
+    let k = document.getElementById("input-k-2").value.replace(/\s/g, '');
+    let x = document.getElementById("input-x-2").value.replace(/\s/g, '');
+    let l = document.getElementById("input-l-2").value.replace(/\s/g, '');
 
-    let check_res_r = validate_positive(r, "R", 2);
-    let check_res_lambda = validate_is_number(lambda, "λ", 2);
+    let check_res_k = validate_positive(k, "k", 2);
+    let check_res_x = validate_positive(x, "x", 2);
+    let check_res_l = validate_positive(l, "l", 2);
     
-    if (check_res_r && check_res_lambda) {
-        let ans = Math.sqrt(2) * parseFloat(lambda) / parseFloat(r);
-        append_result(`[Result] E = ${ans.toFixed(2)} · k (Н/Кл)`, 2);
+    if (check_res_k && check_res_x && check_res_l) {
+        k = parseFloat(k);
+        x = parseFloat(x) / 100;
+        l = parseFloat(l) / 100;
+        console.log(x);
+        console.log(l);
+        let eps = 8.854 * 10**(-12);
+        let ans = 4 * l * Math.sqrt(Math.PI * k * x * eps) * 10**9;
+        append_result(`[Result] q = ${ans.toFixed(2)} (нКл)`, 2);
     }
 }
