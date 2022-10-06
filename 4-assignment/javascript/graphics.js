@@ -27,11 +27,11 @@ function draw_1() {
     // draw A and B points
     ctx.ellipse(w - 100, center_h, 4, 4, 0, 0, 2 * Math.PI);
     ctx.fill();
-    ctx.fillText("B", w - 105, center_h - 10);
-    ctx.fillText("-q", w - 110, center_h + 20);
+    ctx.fillText("A", w - 105, center_h - 10);
+    ctx.fillText("+9q", w - 120, center_h + 20);
     ctx.ellipse(w - 180, center_h, 4, 4, 0, 0, 2 * Math.PI);
-    ctx.fillText("A", w - 185, center_h - 10);
-    ctx.fillText("+9q", w - 200, center_h + 20);
+    ctx.fillText("B", w - 185, center_h - 10);
+    ctx.fillText("-q", w - 190, center_h + 20);
     ctx.fill();
     ctx.stroke();
 
