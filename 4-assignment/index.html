@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="xGodness">
+    <title>Assignment #2</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/4-assignment.css">
+</head>
+
+<header>
+    <script src="../include_header.js"></script>
+<!--    <script src="/physics/include_header.js"></script>-->
+    <div id="return-href-container">
+        <a href="../index.html"><span id="arrow-span-2">⟵</span> Return</a>
+    </div>
+</header>
+
+<body>
+    <!--------------------------------- Problem 1 --------------------------------->
+    <div id="problem-1">
+
+        <table id="problem-1-table">
+            <tr>
+                <td id="cell-given-1" colspan="3">
+                    <p class="problem-header">
+                        Problem #4.1
+                    </p>
+                    <hr>
+                    <p id="given-1">
+                        В точках A и B на расстоянии АВ=l  закреплены заряды +9q и -q.
+                        Вдоль прямой AB к ним движется частица массы m, имеющая заряд +q.
+                        Какую наименьшую скорость должна иметь эта частица на очень большом расстоянии,
+                        чтобы достичь точки В?
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="cell-canvas-1">
+                    <div id="canvas-container-1">
+                        <canvas id="canvas-1" width="400" height="400" style="border: 2px solid black"> </canvas>
+                        <script src="javascript/graphics.js"></script>
+                    </div>
+                </td>
+
+                <td id="cell-input">
+                    <div id="io-container">
+                        <label for="input-m-1">Parameter m (кг):</label>
+                        <input id="input-m-1" type="text">
+
+                        <label for="input-q-1">Parameter q (Кл):</label>
+                        <input id="input-q-1" type="text">
+
+                        <label for="input-l-1">Parameter l (м):</label>
+                        <input id="input-l-1" type="text">
+
+                        <button id="button-submit-1" role="button" onclick="calculate_1()">Submit</button>
+                    </div>
+                </td>
+
+                <td id="cell-result">
+                    <fieldset class="result-fieldset">
+                        <legend class="result-legend">Result</legend>
+                        <p id="result-field-1"></p>
+                    </fieldset>
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+
+    <!--------------------------------- Problem 2 --------------------------------->
+
+    <div id="problem-2">
+
+        <table id="problem-2-table">
+            <tr>
+                <td id="cell-given-2" colspan="3">
+                    <p class="problem-header">
+                        Problem #2.7
+                    </p>
+                    <hr>
+                    <p id="given">
+                        Небольшой шарик висит над горизонтальной безграничной проводящей плоскостью
+                        на изолирующей упругой нити жесткости k. После того как шарик зарядили, он опустился на x см,
+                        и его расстояние до проводящей плоскости стало равным l. Найти заряд шарика.
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="cell-canvas-2">
+                    <div id="canvas-container-2">
+                        <canvas id="canvas-2" width="400" height="400" style="border: 2px solid black"> </canvas>
+                    </div>
+                </td>
+
+                <td class="cell-input">
+                    <div class="io-container">
+                        <label for="input-k-2">Parameter k:</label>
+                        <input id="input-k-2" type="text">
+
+                        <label for="input-x-2">Parameter x (см):</label>
+                        <input id="input-x-2" type="text">
+
+                        <label for="input-l-2">Parameter l (м):</label>
+                        <input id="input-l-2" type="text">
+
+                        <button id="button-submit-2" role="button" onclick="calculate_2()">Submit</button>
+                    </div>
+                </td>
+
+                <td class="cell-result">
+                    <fieldset class="result-fieldset">
+                        <legend class="result-legend">Result</legend>
+                        <p id="result-field-2"></p>
+                    </fieldset>
+                </td>
+
+                <script src="javascript/calculation.js"></script>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
