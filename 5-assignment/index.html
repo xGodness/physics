@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="xGodness">
-    <title>Assignment #4</title>
+    <title>Assignment #5</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css">
     <link rel="stylesheet" type="text/css" href="css/4-assignment.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <header>
@@ -25,14 +28,13 @@
             <tr>
                 <td id="cell-given-1" colspan="3">
                     <p class="problem-header">
-                        Problem #4.1
+                        Problem #5.5
                     </p>
                     <hr>
                     <p id="given-1">
-                        В точках A и B на расстоянии АВ=l  закреплены заряды +9q и -q.
-                        Вдоль прямой AB к ним движется частица массы m, имеющая заряд +q.
-                        Какую наименьшую скорость должна иметь эта частица на очень большом расстоянии,
-                        чтобы достичь точки В?
+                        Газоразрядный счетчик элементарных частиц состоит из трубки радиуса \( r_2 \) мм и натянутой
+                        по оси трубки нити радиуса \( r_1 \) мкм. Длина счетчика равна \( l \) мм.
+                        Положив \( \varepsilon = 1 \), оценить межэлектродную емкость \( C \).
                     </p>
                     <hr>
                 </td>
@@ -48,13 +50,13 @@
 
                 <td id="cell-input">
                     <div id="io-container">
-                        <label for="input-m-1">Parameter m (кг):</label>
-                        <input id="input-m-1" type="text">
+                        <label for="input-r2-1">Parameter \( r_2 \) (мм):</label>
+                        <input id="input-r2-1" type="text">
 
-                        <label for="input-q-1">Parameter q (Кл):</label>
-                        <input id="input-q-1" type="text">
+                        <label for="input-r1-1">Parameter \( r_1 \) (мкм):</label>
+                        <input id="input-r1-1" type="text">
 
-                        <label for="input-l-1">Parameter l (м):</label>
+                        <label for="input-l-1">Parameter \( l \) (мм):</label>
                         <input id="input-l-1" type="text">
 
                         <button id="button-submit-1" role="button" onclick="calculate_1()">Submit</button>
@@ -81,13 +83,12 @@
             <tr>
                 <td id="cell-given-2" colspan="3">
                     <p class="problem-header">
-                        Problem #4.7
+                        Problem #5.8
                     </p>
                     <hr>
                     <p id="given">
-                        Небольшой шарик висит над горизонтальной безграничной проводящей плоскостью
-                        на изолирующей упругой нити жесткости k. После того как шарик зарядили, он опустился на x см,
-                        и его расстояние до проводящей плоскости стало равным l. Найти заряд шарика.
+                        Найти емкость бесконечной цепи, которая образована повторением одного и того же звена,
+                        состоящего из двух одинаковых конденсаторов, каждый емкости \( C \).
                     </p>
                     <hr>
                 </td>
@@ -102,14 +103,8 @@
 
                 <td class="cell-input">
                     <div class="io-container">
-                        <label for="input-k-2">Parameter k (Н/м):</label>
-                        <input id="input-k-2" type="text">
-
-                        <label for="input-x-2">Parameter x (см):</label>
-                        <input id="input-x-2" type="text">
-
-                        <label for="input-l-2">Parameter l (см):</label>
-                        <input id="input-l-2" type="text">
+                        <label for="input-c-2">Parameter \( C \) (мкФ):</label>
+                        <input id="input-c-2" type="text">
 
                         <button id="button-submit-2" role="button" onclick="calculate_2()">Submit</button>
                     </div>
