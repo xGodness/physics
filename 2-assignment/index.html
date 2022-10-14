@@ -7,6 +7,9 @@
     <title>Assignment #2</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css">
     <link rel="stylesheet" type="text/css" href="css/2-assignment.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <header>
@@ -29,9 +32,9 @@
                     </p>
                     <hr>
                     <p id="given-1">
-                        Система состоит из тонкого заряженного проволочного кольца радиуса R и очень длинной равномерно заряженной нити,
+                        Система состоит из тонкого заряженного проволочного кольца радиуса \( R\ \) и очень длинной равномерно заряженной нити,
                         расположенной по оси кольца так, что один из ее концов совпадает с центром кольца.
-                        Последнее имеет заряд q. На единицу длины нити приходится заряд λ.
+                        Последнее имеет заряд \( q \). На единицу длины нити приходится заряд \( \lambda \).
                         Найти силу взаимодействия кольца и нити.
                     </p>
                     <hr>
@@ -48,13 +51,13 @@
 
                 <td id="cell-input">
                     <div id="io-container">
-                        <label for="input-r-1">Parameter R (м):</label>
+                        <label for="input-r-1">Parameter \( R \) (м):</label>
                         <input id="input-r-1" type="text">
 
-                        <label for="input-q-1">Parameter q (Кл):</label>
+                        <label for="input-q-1">Parameter \( q \) (Кл):</label>
                         <input id="input-q-1" type="text">
 
-                        <label for="input-lambda-1">Parameter λ (Кл/м):</label>
+                        <label for="input-lambda-1">Parameter \( \lambda \) (Кл/м):</label>
                         <input id="input-lambda-1" type="text">
 
                         <button id="button-submit-1" role="button" onclick="calculate_1()">Submit</button>
@@ -87,7 +90,7 @@
                     <p id="given">
                         Найти напряженность поля равномерно заряженной нити в виде четверти кольца
                         в точке центра его кривизны.
-                        Линейная плотность заряда нити λ. Радиус R.
+                        Линейная плотность заряда нити \( \lambda \). Радиус \( R \).
                     </p>
                     <hr>
                 </td>
@@ -102,10 +105,10 @@
 
                 <td class="cell-input">
                     <div class="io-container">
-                        <label for="input-lambda-2">Parameter λ (Кл/м):</label>
+                        <label for="input-lambda-2">Parameter \( \lambda \) (Кл/м):</label>
                         <input id="input-lambda-2" type="text">
 
-                        <label for="input-r-2">Parameter R (м):</label>
+                        <label for="input-r-2">Parameter \( R \) (м):</label>
                         <input id="input-r-2" type="text">
 
                         <button id="button-submit-2" role="button" onclick="calculate_2()">Submit</button>

@@ -7,6 +7,9 @@
     <title>Assignment #4</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css">
     <link rel="stylesheet" type="text/css" href="css/4-assignment.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <header>
@@ -29,10 +32,10 @@
                     </p>
                     <hr>
                     <p id="given-1">
-                        В точках A и B на расстоянии АВ=l  закреплены заряды +9q и -q.
-                        Вдоль прямой AB к ним движется частица массы m, имеющая заряд +q.
+                        В точках \( A \) и \( B \) на расстоянии \( АВ = l \ \)  закреплены заряды \( +9q\  \) и  \( -q\  \).
+                        Вдоль прямой \( AB\ \) к ним движется частица массы \( m\), имеющая заряд \( +q \ \).
                         Какую наименьшую скорость должна иметь эта частица на очень большом расстоянии,
-                        чтобы достичь точки В?
+                        чтобы достичь точки \( В\ \)?
                     </p>
                     <hr>
                 </td>
@@ -48,13 +51,13 @@
 
                 <td id="cell-input">
                     <div id="io-container">
-                        <label for="input-m-1">Parameter m (кг):</label>
+                        <label for="input-m-1">Parameter \( m \) (кг):</label>
                         <input id="input-m-1" type="text">
 
-                        <label for="input-q-1">Parameter q (Кл):</label>
+                        <label for="input-q-1">Parameter \( q \) (Кл):</label>
                         <input id="input-q-1" type="text">
 
-                        <label for="input-l-1">Parameter l (м):</label>
+                        <label for="input-l-1">Parameter \( l \) (м):</label>
                         <input id="input-l-1" type="text">
 
                         <button id="button-submit-1" role="button" onclick="calculate_1()">Submit</button>
@@ -86,8 +89,9 @@
                     <hr>
                     <p id="given">
                         Небольшой шарик висит над горизонтальной безграничной проводящей плоскостью
-                        на изолирующей упругой нити жесткости k. После того как шарик зарядили, он опустился на x см,
-                        и его расстояние до проводящей плоскости стало равным l. Найти заряд шарика.
+                        на изолирующей упругой нити жесткости \( k \). После того как шарик зарядили,
+                        он опустился на \( x\) см,
+                        и его расстояние до проводящей плоскости стало равным \( l \). Найти заряд шарика.
                     </p>
                     <hr>
                 </td>
@@ -102,13 +106,13 @@
 
                 <td class="cell-input">
                     <div class="io-container">
-                        <label for="input-k-2">Parameter k (Н/м):</label>
+                        <label for="input-k-2">Parameter \( k \) (Н/м):</label>
                         <input id="input-k-2" type="text">
 
-                        <label for="input-x-2">Parameter x (см):</label>
+                        <label for="input-x-2">Parameter \( x \) (см):</label>
                         <input id="input-x-2" type="text">
 
-                        <label for="input-l-2">Parameter l (см):</label>
+                        <label for="input-l-2">Parameter \( l \) (см):</label>
                         <input id="input-l-2" type="text">
 
                         <button id="button-submit-2" role="button" onclick="calculate_2()">Submit</button>

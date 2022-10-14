@@ -51,42 +51,33 @@ function validate_is_number(num, var_name, problem_number) {
 
 function calculate_1() {
     clear_result_field(1);
-    let m = document.getElementById("input-m-1").value.replace(/\s/g, '');
-    let q = document.getElementById("input-q-1").value.replace(/\s/g, '');
+    let r1 = document.getElementById("input-r1-1").value.replace(/\s/g, '');
+    let r2 = document.getElementById("input-r2-1").value.replace(/\s/g, '');
     let l = document.getElementById("input-l-1").value.replace(/\s/g, '');
     
-    let check_res_r = validate_positive(m, "m", 1);
-    let check_res_q = validate_is_number(q, "q", 1);
+    let check_res_r1 = validate_positive(r1, "r1", 1);
+    let check_res_r2 = validate_positive(r2, "r2", 1);
     let check_res_l = validate_positive(l, "l", 1);
-    let k = 9 * 10**9;
+    let eps = 8.85 * 10**(-12);
     
-    if (check_res_r && check_res_q && check_res_l) {
-        m = parseFloat(m);
-        q = parseFloat(q);
-        l = parseFloat(l);
-        let ans = Math.sqrt((8 * q * q * k) / (m * l));
-        append_result(`[Result] v = ${ans.toFixed(2)} (м/с)`, 1);
+    if (check_res_r1 && check_res_r2 && check_res_l) {
+        r1 = parseFloat(r1) / 10**6; 
+        r2 = parseFloat(r2) / 10**3;
+        l = parseFloat(l) / 10**3;
+        let ans = (2 * Math.PI * l * eps) / Math.log(r2 / r1) * 10**12;
+        append_result(`[Result] C = ${ans.toFixed(2)} (пФ/м)`, 1);
     }
 }
 
 function calculate_2() {
     clear_result_field(2);
-    let k = document.getElementById("input-k-2").value.replace(/\s/g, '');
-    let x = document.getElementById("input-x-2").value.replace(/\s/g, '');
-    let l = document.getElementById("input-l-2").value.replace(/\s/g, '');
+    let c = document.getElementById("input-c-2").value.replace(/\s/g, '');
 
-    let check_res_k = validate_positive(k, "k", 2);
-    let check_res_x = validate_positive(x, "x", 2);
-    let check_res_l = validate_positive(l, "l", 2);
+    let check_res_c = validate_positive(c, "c", 2);
     
-    if (check_res_k && check_res_x && check_res_l) {
-        k = parseFloat(k);
-        x = parseFloat(x) / 100;
-        l = parseFloat(l) / 100;
-        console.log(x);
-        console.log(l);
-        let eps = 8.854 * 10**(-12);
-        let ans = 4 * l * Math.sqrt(Math.PI * k * x * eps) * 10**9;
-        append_result(`[Result] q = ${ans.toFixed(2)} (нКл)`, 2);
+    if (check_res_c) {
+        c = parseFloat(c)
+        let ans = c * (Math.sqrt(5) - 1) / 2;
+        append_result(`[Result] C = ${ans.toFixed(2)} (мкФ)`, 2);
     }
 }

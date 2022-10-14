@@ -56,15 +56,11 @@ td {
     text-align: left;
 }
 
-#input-r1-1, #input-r2-1, #input-l-1 {
+#input-r1-1, #input-r2-1, #input-l-1, #input-c-2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-#input-c-2 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 
