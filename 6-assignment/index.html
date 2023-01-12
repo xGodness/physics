@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="xGodness">
+    <title>Assignment #6</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/2-assignment.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<header>
+    <script src="../include_header.js"></script>
+<!--    <script src="/physics/include_header.js"></script>-->
+    <div id="return-href-container">
+        <a href="../index.html"><span id="arrow-span-2">⟵</span> Return</a>
+    </div>
+</header>
+
+<body>
+    <!--------------------------------- Problem 1 --------------------------------->
+    <div id="problem-1">
+
+        <table id="problem-1-table">
+            <tr>
+                <td id="cell-given-1" colspan="3">
+                    <p class="problem-header">
+                        Problem #6.4
+                    </p>
+                    <hr>
+                    <p id="given-1">
+                        Найти емкость сферического конденсатора, радиусы обкладок которого равны \( R_1 \) и \( R_2 \)
+                        ( \( R_2 > R_1 \) ), если пространство между обкладками заполнено изотропным диэлектриком,
+                        проницаемость которого зависит от расстояния \( r \) до центра конденсатора как
+                        \( \varepsilon = \frac{\alpha}{r} \), где \( \alpha \) - постоянная.
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="cell-canvas-1">
+                    <div id="canvas-container-1">
+                        <canvas id="canvas-1" width="400" height="400" style="border: 2px solid black"> </canvas>
+                        <script src="javascript/graphics.js"></script>
+                    </div>
+                </td>
+
+                <td id="cell-input">
+                    <div id="io-container">
+                        <label for="input-r1-1">Parameter \( R_1 \) (м):</label>
+                        <input id="input-r1-1" type="text">
+
+                        <label for="input-r2-1">Parameter \( R_2 \) (м):</label>
+                        <input id="input-r2-1" type="text">
+
+                        <label for="input-alpha-1">Parameter \( \alpha \):</label>
+                        <input id="input-alpha-1" type="text">
+
+                        <button id="button-submit-1" role="button" onclick="calculate_1()">Submit</button>
+                    </div>
+                </td>
+
+                <td id="cell-result">
+                    <fieldset class="result-fieldset">
+                        <legend class="result-legend">Result</legend>
+                        <p id="result-field-1"></p>
+                    </fieldset>
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+
+    <!--------------------------------- Problem 2 --------------------------------->
+
+    <div id="problem-2">
+
+        <table id="problem-2-table">
+            <tr>
+                <td id="cell-given-2" colspan="3">
+                    <p class="problem-header">
+                        Problem #6.6
+                    </p>
+                    <hr>
+                    <p id="given">
+                        Конденсатор емкости \( C_1 \), предварительно заряженный до напряжения \( U \),
+                        подключили параллельно к незаряженному конденсатору емкости \( C_2 \).
+                        Найти изменение электрической энергии этой системы к моменту установления равновесия.
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="cell-canvas-2">
+                    <div id="canvas-container-2">
+                        <canvas id="canvas-2" width="400" height="400" style="border: 2px solid black"> </canvas>
+                    </div>
+                </td>
+
+                <td class="cell-input">
+                    <div class="io-container">
+                        <label for="input-c1-2">Parameter \( C_1 \) (мкФ):</label>
+                        <input id="input-c1-2" type="text">
+
+                        <label for="input-c2-2">Parameter \( C_2 \) (мкФ):</label>
+                        <input id="input-c2-2" type="text">
+
+                        <label for="input-u-2">Parameter \( U \) (В):</label>
+                        <input id="input-u-2" type="text">
+
+                        <button id="button-submit-2" role="button" onclick="calculate_2()">Submit</button>
+                    </div>
+                </td>
+
+                <td class="cell-result">
+                    <fieldset class="result-fieldset">
+                        <legend class="result-legend">Result</legend>
+                        <p id="result-field-2"></p>
+                    </fieldset>
+                </td>
+
+                <script src="javascript/calculation.js"></script>
+            </tr>
+        </table>
+
+    </div>
+
+</body>

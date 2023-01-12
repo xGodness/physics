@@ -1,0 +1,70 @@
+#return-href-container {
+    text-align: center;
+}
+
+#arrow-span-2 {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+tr {
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+td {
+    width: 30vw;
+    padding: 20px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.problem-header {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#problem-1-table, #problem-2-table {
+    border-style: ridge;
+    border-color: #737373;
+    border-width: 10px;
+    box-shadow: 15px 15px 10px slategrey;
+    margin-top: 20px;
+    padding: 5px;
+    width: 100%;
+}
+
+#cell-given-1, #cell-given-2 {
+    font-size: large;
+}
+
+.io-container {
+    position: relative;
+    width: available;
+ }
+
+.result-legend {
+    font-weight: bold;
+}
+
+#result-field-1, #result-field-2 {
+    text-align: left;
+}
+
+#input-l-1, #input-alpha-1, #input-m-1, #input-lambda-2, #input-l-2, #input-a-2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+fieldset {
+    border: 1px solid black;
+}
+

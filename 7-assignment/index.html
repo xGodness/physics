@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="xGodness">
+    <title>Assignment #7</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/2-assignment.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<header>
+    <script src="../include_header.js"></script>
+<!--    <script src="/physics/include_header.js"></script>-->
+    <div id="return-href-container">
+        <a href="../index.html"><span id="arrow-span-2">⟵</span> Return</a>
+    </div>
+</header>
+
+<body>
+    <!--------------------------------- Problem 1 --------------------------------->
+    <div id="problem-1">
+
+        <table id="problem-1-table">
+            <tr>
+                <td id="cell-given-1" colspan="3">
+                    <p class="problem-header">
+                        Problem #7.6
+                    </p>
+                    <hr>
+                    <p id="given-1">
+                        В проводнике сопротивлением \( R \) за время \( t \) сила тока равномерно возрастает от
+                        \( I_0 \) до  \( I_{max} \). Найти количество теплоты \( Q \), которое
+                            выделилось за это время в проводнике.
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="cell-canvas-1">
+                    <div id="canvas-container-1">
+                        <canvas id="canvas-1" width="400" height="400" style="border: 2px solid black;
+                        background: url('../images/capybara.gif')"> </canvas>
+                        <script src="javascript/graphics.js"></script>
+                    </div>
+                </td>
+
+                <td id="cell-input">
+                    <div id="io-container">
+                        <label for="input-r-1">Parameter \( R \) (Ом):</label>
+                        <input id="input-r-1" type="text">
+
+                        <label for="input-t-1">Parameter \( t \) (с):</label>
+                        <input id="input-t-1" type="text">
+
+                        <label for="input-i0-1">Parameter \( I_0 \) (А):</label>
+                        <input id="input-i0-1" type="text">
+
+                        <label for="input-imax-1">Parameter \( I_{max} \) (А):</label>
+                        <input id="input-imax-1" type="text">
+
+                        <button id="button-submit-1" role="button" onclick="calculate_1()">Submit</button>
+                    </div>
+                </td>
+
+                <td id="cell-result">
+                    <fieldset class="result-fieldset">
+                        <legend class="result-legend">Result</legend>
+                        <p id="result-field-1"></p>
+                    </fieldset>
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+
+    <!--------------------------------- Problem 2 --------------------------------->
+
+    <div id="problem-2">
+
+        <table id="problem-2-table">
+            <tr>
+                <td id="cell-given-2" colspan="3">
+                    <p class="problem-header">
+                        Problem #7.8
+                    </p>
+                    <hr>
+                    <p id="given">
+                        Определить, сколько тепла выделится в спирали сопротивлением \( R \) при прохождении через нее
+                        количества электричества \( q \), если ток в спирали
+                        равномерно убывал до нуля в течение времени \( t \).
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="cell-canvas-2">
+                    <div id="canvas-container-2">
+                        <canvas id="canvas-2" width="400" height="400" style="border: 2px solid black;
+                        background: url('../images/capybara.gif')"> </canvas>
+                    </div>
+                </td>
+
+                <td class="cell-input">
+                    <div class="io-container">
+                        <label for="input-r-2">Parameter \( R \) (Ом):</label>
+                        <input id="input-r-2" type="text">
+
+                        <label for="input-q-2">Parameter \( q \) (Кл):</label>
+                        <input id="input-q-2" type="text">
+
+                        <label for="input-t-2">Parameter \( t \) (с):</label>
+                        <input id="input-t-2" type="text">
+
+                        <button id="button-submit-2" role="button" onclick="calculate_2()">Submit</button>
+                    </div>
+                </td>
+
+                <td class="cell-result">
+                    <fieldset class="result-fieldset">
+                        <legend class="result-legend">Result</legend>
+                        <p id="result-field-2"></p>
+                    </fieldset>
+                </td>
+
+                <script src="javascript/calculation.js"></script>
+            </tr>
+        </table>
+
+    </div>
+
+</body>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="xGodness">
+    <title>Assignment #1</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/2-assignment.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<header>
+    <script src="../include_header.js"></script>
+<!--    <script src="/physics/include_header.js"></script>-->
+    <div id="return-href-container">
+        <a href="../index.html"><span id="arrow-span-2">⟵</span> Return</a>
+    </div>
+</header>
+
+<body>
+    <!--------------------------------- Problem 1 --------------------------------->
+    <div id="problem-1">
+
+        <table id="problem-1-table">
+            <tr>
+                <td id="cell-given-1" colspan="3">
+                    <p class="problem-header">
+                        Problem #1.4
+                    </p>
+                    <hr>
+                    <p id="given-1">
+                        Два шарика массой \( m \) г каждый подвешены в одной точке на нитях длиной \( l \) см каждая.
+                        Получив одинаковый заряд, шарики разошлись так, что нити образовали между собой угол \( \alpha \).
+                        Найти заряд каждого шарика.
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="cell-canvas-1">
+                    <div id="canvas-container-1">
+                        <canvas id="canvas-1" width="400" height="400" style="border: 2px solid black"> </canvas>
+                        <script src="javascript/graphics.js"></script>
+                    </div>
+                </td>
+
+                <td id="cell-input">
+                    <div id="io-container">
+                        <label for="input-l-1">Parameter \( l \) (см):</label>
+                        <input id="input-l-1" type="text">
+
+                        <label for="input-alpha-1">Parameter \( \alpha \) ( \( ^{\circ} \) ):</label>
+                        <input id="input-alpha-1" type="text">
+
+                        <label for="input-m-1">Parameter \( m \) (г):</label>
+                        <input id="input-m-1" type="text">
+
+                        <button id="button-submit-1" role="button" onclick="calculate_1()">Submit</button>
+                    </div>
+                </td>
+
+                <td id="cell-result">
+                    <fieldset class="result-fieldset">
+                        <legend class="result-legend">Result</legend>
+                        <p id="result-field-1"></p>
+                    </fieldset>
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+
+    <!--------------------------------- Problem 2 --------------------------------->
+
+    <div id="problem-2">
+
+        <table id="problem-2-table">
+            <tr>
+                <td id="cell-given-2" colspan="3">
+                    <p class="problem-header">
+                        Problem #2.8
+                    </p>
+                    <hr>
+                    <p id="given-2">
+                        Дана равномерно заряженная нить с линейной плотностью заряда \( \lambda \) мкКл/м
+                        длинной \( l \) см. Вычислить напряженность поля в точке, лежащей на продолжении нити
+                        на расстоянии \( a \) см от её конца.
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="cell-canvas-2">
+                    <div id="canvas-container-2">
+                        <canvas id="canvas-2" width="400" height="400" style="border: 2px solid black"> </canvas>
+                    </div>
+                </td>
+
+                <td class="cell-input">
+                    <div class="io-container">
+                        <label for="input-lambda-2">Parameter \( \lambda \) (мкКл/м):</label>
+                        <input id="input-lambda-2" type="text">
+
+                        <label for="input-l-2">Parameter \( l \) (см):</label>
+                        <input id="input-l-2" type="text">
+
+                        <label for="input-a-2">Parameter \( a \) (см):</label>
+                        <input id="input-a-2" type="text">
+
+                        <button id="button-submit-2" role="button" onclick="calculate_2()">Submit</button>
+                    </div>
+                </td>
+
+                <td class="cell-result">
+                    <fieldset class="result-fieldset">
+                        <legend class="result-legend">Result</legend>
+                        <p id="result-field-2"></p>
+                    </fieldset>
+                </td>
+
+                <script src="javascript/calculation.js"></script>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
